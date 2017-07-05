@@ -1,18 +1,18 @@
 @font-face {
-    font-family: 'Source Sans Pro';
-    src: url('fonts/SourceSansPro-Regular.ttf') format("truetype"); ;
+    font-family: "Source Sans Pro";
+    src: url("fonts/SourceSansPro-Regular.ttf") format("truetype"); ;
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Source Sans Black';
-    src: url('fonts/SourceSansPro-Black.ttf') format("truetype"); ;
+    font-family: "Source Sans Black";
+    src: url("fonts/SourceSansPro-Black.ttf") format("truetype"); ;
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Source Sans Bold';
-    src: url('fonts/SourceSansPro-Bold.ttf') format("truetype"); ;
+    font-family: "Source Sans Bold";
+    src: url("fonts/SourceSansPro-Bold.ttf") format("truetype"); ;
     font-weight: normal;
     font-style: normal;
 }
@@ -22,196 +22,195 @@ body, html {
     height: 100%;
     margin: 0;
     background-color: black;
-    font-family: 'Source Sans Pro';
-    font-size: 14px;
-}
-.addShadow {
-    box-shadow: -9px 10px 0px 0px rgba(0, 0, 0, 0.1);
+    font-family: "Source Sans Pro";
+    font-size: 62.5%;
 }
 .container {
+    position: relative;
     width: 100%;
     min-height: 100%;
-    background-image: url('image/bg.jpg');
-    padding-top: 97px;
-    position: relative;
+    padding-top: 95px;
+    background-image: url("image/bg.jpg");
 }
-.main {
-    box-sizing: border-box;
-    background-color: #ebebeb;
+.main { 
     width: 1230px;
-    border-radius: 5px;
     margin: 0 auto;
-    padding: 58px 30px;
+    padding: 60px 30px;
+    box-sizing: border-box;    
+    border-radius: 5px;
+    background-color: #ebebeb;   
 }
 .logo {
+    position: absolute;
+    top: 50px;
+    left: 50%;
     width: 260px;
     height: 105px;
-    left: 50%;
     margin-left: -130px;
-    background-color: #ebebeb;
-    position: absolute;
-    top: 51px;
     border-radius: 5px;
+    box-shadow: -9px 10px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: #ebebeb;     
 }
-.sitename {
-    font-family: 'Source Sans Black';
+.site-name {
+    margin: 0;
     color:  #373435;
-    font-size: 40px;
+    font-family: "Source Sans Black";    
+    font-size: 4.0rem;
     font-weight: bold;
     letter-spacing: 2.4px;
     line-height: 105px;
-    text-align: center;
-    margin: 0;
+    text-align: center;    
     text-transform: uppercase;
 }
 .menu {
     width: 100%;
-    margin: 44px 0 39px 0;
+    margin: 45px 0 40px 0;
 }
-.menu_container {
+.menu-container {
     width: 480px;
     height: 40px;
     padding: 0;
     margin:  0px auto;
 }
-.menu_point {
+.menu-point {
     display: inline-block;
     margin-right: 40px;
     padding: 10px 0;
     border: 1px solid #d2d2d2;
     border-left-color: transparent;
-    border-right: transparent;
+    border-right-color: transparent;
     color:  #909090;
-    font-size: 16px; 
-    text-transform: uppercase;
-    
+    font-size: 1.6rem; 
+    text-transform: uppercase;    
 }
-.menu_point:last-child {
+.menu-point:last-child {
     margin-right: 0;
 }
-.menu_container .activ {
+.menu-container .activ {
     color:  #ed3237;
 }
 .banner {
     width: 100%;
-    margin-bottom: 71px;
+    margin-bottom: 70px;
 }
-.banner_img {
+.banner-img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 11px;
+    border-radius: 10px;
+    box-shadow: -9px 10px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .row1 {
     width: 100%;
-    margin: 0 0 73px 0;
+    margin: 0 0 75px 0;
 }
 .caption {
-    font-family: 'Source Sans Bold';
+    margin: 10px 0;
     color:  #373435;
-    font-size: 32px;
-    text-align: center;
-    margin: 11px 0;
+    font-family: "Source Sans Bold";    
+    font-size: 3.2rem;
+    text-align: center;    
     text-transform: uppercase;
 } 
 .text {
-    font-family: 'Source Sans Pro';
+    margin: 0;
     color:  #676364;
-    font-size: 18px;
+    font-family: "Source Sans Pro";    
+    font-size: 1.8rem;
     font-weight: normal;
     text-align: center;
-    margin: 0;
+    
 }
-.readMore {
+.read-more {
     position: relative;
     margin-top: 75px;
 }
-.decorElem {
+.decor-elem {
     width: 100%;
     height: 7px;
     border: 1px solid #c2c2c2;
     border-left-color: transparent;
     border-right-color: transparent;
 }
-.decorElem1 {
+.decor-elem1 {
     border-top: none;
 }
-.readMore_btnBox {
-    box-sizing: border-box;
-    width: 145px;
-    height: 37px;
-    background-color: #ebebeb;
+.read-more-btn-box {
     position: absolute;
     bottom: -10px;
-    left: 50%;
+    left: 50%;    
+    width: 145px;
+    height: 37px;
     margin-left: -72.5px;
     padding: 0 13px;
+    box-sizing: border-box;
+    background-color: #ebebeb; 
 }
-.readMore_btn {
+.read-more-btn {
     width: 100%;
     height: 100%;
     border: 0;
     background-color: #ed3237;
-    font-family: 'Source Sans Bold';
-    color:  #ebebeb;
-    font-size: 16px;
     border-radius: 5px;
     box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.12);
+    color:  #ebebeb;
+    font-family: "Source Sans Bold";    
+    font-size: 1.6rem;    
     text-transform: uppercase;
 }
 .row2 {
     width: 100%;
 }
-.row2_items {
+.row2-items {
     width: 100%;
-    padding: 0;
     height: 162px;
+    padding: 0;
+    margin-top: 60px;    
     list-style: none;
     font-size: 0;
-    margin-top: 60px;
 }
-.row2_item {
+.row2-item {
+    display: inline-block;
     width: 370px;
     height: 100%; 
     margin-right: 30px;
-    background-color: red;
-    display: inline-block;
+    background-color: red;    
 }
-.row2_item:last-child {
+.row2-item:last-child {
     margin-right: 0;
 }
-.row2_iconBox {
-    margin-top: 5px;
+.row2-icon-box {
+    position: relative;
+    display: inline-block;
     width: 70px;
     height: 70px;
-    background-color: #373435;
+    margin-top: 5px;
+    margin-right: 30px;
     border-radius: 10px;
     border-top-right-radius: 0;
-    margin-right: 30px;
-    box-shadow: -9px 10px 0px 0px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
+    background-color: #373435;  
+    box-shadow: -9px 10px 0px 0px rgba(0, 0, 0, 0.1);    
+    vertical-align: top;    
 }
-.row2_icon {
+.row2-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     display: block;
     margin: -12.5px 0 0 -12.5px;
 }
-.row2_contentBox {
+.row2-content-box {
     display: inline-block;
     width: 270px;
 }
-.row2_contentBox .caption {
-    font-size: 16px;
+.row2-content-box .caption {
     display: inline-block;
     width: 200px;
-    text-align: left;
     margin-top: 0;
+    font-size: 1.6rem;
+    text-align: left;
 }
-.row2_contentBox  .text {
-    font-size: 14px;
+.row2-content-box  .text {
+    font-size: 1.4rem;
 }
 
