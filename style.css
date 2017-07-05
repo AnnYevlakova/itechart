@@ -31,6 +31,7 @@ body, html {
     min-height: 100%;
     padding-top: 95px;
     background-image: url("image/bg.jpg");
+    background-attachment: fixed;
 }
 .main { 
     width: 1230px;
@@ -40,6 +41,8 @@ body, html {
     border-radius: 5px;
     background-color: #ebebeb;   
 }
+
+/******** logo ********/
 .logo {
     position: absolute;
     top: 50px;
@@ -62,6 +65,13 @@ body, html {
     text-align: center;    
     text-transform: uppercase;
 }
+.arrow {
+    position: relative;
+    bottom: 0;
+    height: 11px;
+    width: auto;   
+}
+/******** menu ********/
 .menu {
     width: 100%;
     margin: 45px 0 40px 0;
@@ -78,10 +88,13 @@ body, html {
     padding: 10px 0;
     border: 1px solid #d2d2d2;
     border-left-color: transparent;
-    border-right-color: transparent;
-    color:  #909090;
+    border-right-color: transparent;    
     font-size: 1.6rem; 
     text-transform: uppercase;    
+}
+.menu-point a {
+    text-decoration: none;
+    color:  #909090;
 }
 .menu-point:last-child {
     margin-right: 0;
@@ -89,6 +102,8 @@ body, html {
 .menu-container .activ {
     color:  #ed3237;
 }
+
+/********  banner *******/
 .banner {
     width: 100%;
     margin-bottom: 70px;
@@ -100,9 +115,11 @@ body, html {
     border-radius: 10px;
     box-shadow: -9px 10px 1px 0px rgba(0, 0, 0, 0.1);
 }
-.row1 {
+
+/**************  main-news ***********/
+.main-news {
     width: 100%;
-    margin: 0 0 75px 0;
+    margin: 0 0 50px 0;
 }
 .caption {
     margin: 10px 0;
@@ -118,37 +135,26 @@ body, html {
     font-family: "Source Sans Pro";    
     font-size: 1.8rem;
     font-weight: normal;
-    text-align: center;
-    
+    text-align: center;    
 }
 .read-more {
     position: relative;
-    margin-top: 75px;
+    margin-top: 60px;
 }
 .decor-elem {
-    width: 100%;
-    height: 7px;
-    border: 1px solid #c2c2c2;
-    border-left-color: transparent;
-    border-right-color: transparent;
-}
-.decor-elem1 {
-    border-top: none;
-}
-.read-more-btn-box {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;    
-    width: 145px;
-    height: 37px;
-    margin-left: -72.5px;
-    padding: 0 13px;
-    box-sizing: border-box;
-    background-color: #ebebeb; 
+    display: inline-block;
+    width: 510px;
+    height: 17px;
+    background-image: url("image/decor-elem.png");
+    background-repeat: repeat-x;
 }
 .read-more-btn {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    width: 120px;
+    height: 38px;
+    margin: 0 12px;
     border: 0;
     background-color: #ed3237;
     border-radius: 5px;
@@ -158,28 +164,32 @@ body, html {
     font-size: 1.6rem;    
     text-transform: uppercase;
 }
-.row2 {
+
+/**************  tools ***********/
+.tools {
     width: 100%;
+    font-size: 0;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #c2c2c2;
 }
-.row2-items {
+.tools-items {
     width: 100%;
-    height: 162px;
+    height: 160px;
     padding: 0;
     margin-top: 60px;    
     list-style: none;
     font-size: 0;
 }
-.row2-item {
+.tools-item {
     display: inline-block;
     width: 370px;
-    height: 100%; 
     margin-right: 30px;
-    background-color: red;    
+    vertical-align: bottom;
 }
-.row2-item:last-child {
+.tools-item:last-child {
     margin-right: 0;
 }
-.row2-icon-box {
+.tools-icon-box {
     position: relative;
     display: inline-block;
     width: 70px;
@@ -192,25 +202,126 @@ body, html {
     box-shadow: -9px 10px 0px 0px rgba(0, 0, 0, 0.1);    
     vertical-align: top;    
 }
-.row2-icon {
+.tools-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     display: block;
     margin: -12.5px 0 0 -12.5px;
 }
-.row2-content-box {
+.tools-content-box {
     display: inline-block;
     width: 270px;
 }
-.row2-content-box .caption {
+.tools .text {
+    margin-bottom: 60px;    
+}
+.tools-item .caption {
     display: inline-block;
     width: 200px;
-    margin-top: 0;
+    margin: 0 0 20px 0;
     font-size: 1.6rem;
     text-align: left;
 }
-.row2-content-box  .text {
+.tools-item  .text {
+    height: 60px;
     font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 20px;
+    text-overflow: ellipsis;
+}
+.more-info {
+    color:  #373435;
+    font-family: "Source Sans Bold";
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
+
+/**************  news ***********/
+.news {
+    width: 100%;
+    font-size: 0;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #c2c2c2;
+}
+.news .caption {
+    margin: 50px 0 10px;
+}
+.news .text {
+    margin-bottom: 50px;
+}
+.news-box {
+    width: 100%;
+    height: 420px;
+}
+.news-item {
+    position: relative;
+    left: 146px;
+    display: inline-block;
+    width: 270px;
+    height: 100%;
+    padding: 40px 0 30px 0;
+    margin-right: 30px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    background-color: #e2e2e2;
+    box-shadow: -9px 10px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.news-item:last-child {
+    margin-right: 0;
+}
+.news-item .caption {
+    margin: 0 20px 0 30px;
+    font-family: 'Source Sans Bold';
+    color:  #373435;
+    font-size: 1.6rem;
+    text-align: left;
+}
+.news-img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 25px 0;
+}
+.news-item .text {
+    position:relative;
+    display: block;
+    height: 70px;
+    margin: 0 20px 25px 30px;
+    color:  #676364;
+    text-align: left;
+    font-family: 'Source Sans Pro';    
+    font-size: 1.4rem;
+    /*text-overflow: ellipsis;
+    overflow: hidden;*/
+}
+
+
+/*.news-item .text:after {
+    width: 60px;
+    content:"...";
+    display:inline-block;
+    position:absolute;
+}*/
+.news-item .more-info {
+    margin-left: 30px;
+}
+
+/**************  products ***********/
+.products {
+    margin: 40px 0 0 0 ;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/**************  footer ***********/
