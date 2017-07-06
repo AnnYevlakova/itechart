@@ -495,6 +495,13 @@ body, html {
         margin: 2px 0; 
         font-size: 1.6rem;
     }
+    @-moz-document url-prefix() {
+    .caption,
+    .site-name{ 
+     font-family: 'Source Sans Bold';
+        font-weight: normal;
+    }
+    }
     .text {
         font-size: 1.2rem;
     }
@@ -572,7 +579,6 @@ body, html {
         height: 66px;
         margin-bottom: 5px;   
         font-size: 1.2rem;
-        max-width: 220px; 
         line-height: 17px;
     }
     .products {
