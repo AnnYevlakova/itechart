@@ -449,6 +449,8 @@ body, html {
     }
 }
 
+
+
 @media (max-width: 768px){
     .container {
         padding-top: 30px;
@@ -479,7 +481,7 @@ body, html {
     }
     .menu-point {
         margin-right: 10px;
-        font-size: 1.0rem;
+        font-size: 1.2rem;
         padding: 2px 0;
     }
     .banner {
@@ -605,6 +607,19 @@ body, html {
     }
 }
 
+@media (min-width: 560px) and (max-width: 768px){
+    .tools-item .text {
+        height: 30px;
+    }
+}
 
-
-
+@media (min-width: 450px) and (max-width: 630px){
+    .news-item .text {
+        height: 49px;
+    }
+}
+@media (min-width: 630px) and (max-width: 7680px){
+    .news-item .text {
+        height: 30px;
+    }
+}
