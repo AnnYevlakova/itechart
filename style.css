@@ -35,10 +35,14 @@ body, html {
 }
 .main { 
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 90%;
     max-width: 1230px;
     margin: 0 auto;
-    padding: 60px 30px 76px 30px;
+    padding: 0 30px 76px 30px;
     box-sizing: border-box;    
     border-radius: 5px;
     background-color: #ebebeb;   
@@ -46,11 +50,11 @@ body, html {
 
 /******** logo ********/
 .logo {
-    position: absolute;
+    position: relative;
     top: -50px;
-    left: 50%;
+    /*left: 50%; */  
     width: 260px;
-    margin-left: -130px;
+    /*margin-left: -130px;*/
     border-radius: 5px;
     box-shadow: -9px 10px 0px 0px rgba(0, 0, 0, 0.1);
     background-color: #ebebeb;     
@@ -75,16 +79,17 @@ body, html {
 /******** menu ********/
 .menu {
     width: 100%;
-    margin: 45px 0 40px 0;
+    margin: 0px 0 40px 0;
 }
 .menu-container {
+    display: flex;
+    justify-content: center;    
+    list-style: none;
     width: 100%;
     padding: 0;
     margin:  0px auto;
-    text-align: center;
 }
 .menu-item {
-    display: inline-block;
     margin-right: 40px;
     padding: 10px 0;
     border: 1px solid #d2d2d2;
@@ -107,7 +112,7 @@ body, html {
 /********  banner *******/
 .banner {
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .banner-img {
     display: block;
@@ -141,20 +146,22 @@ body, html {
 }
 .read-more {
     position: relative;
+    display: flex;    
     margin-top: 60px;
-    padding-left: 4px;
+    /*padding-left: 4px;*/
 }
 .decor-elem {
-    display: inline-block;
-    width: 43.5%;
+    /*display: inline-block;
+    width: 43.5%;*/
+    flex: 1 1 auto;
     height: 17px;
     background-image: url("image/decor-elem.png");
     background-repeat: repeat-x;
 }
 .read-more-btn {
     position: relative;
-    bottom: 5px;
-    display: inline-block;
+    bottom: 10px;
+    /*display: inline-block;*/
     width: 120px;
     height: 38px;
     margin: 0 14px;
@@ -177,22 +184,21 @@ body, html {
     padding-bottom: 60px;
     border-bottom: 1px solid #c2c2c2;
 }
-.tools-item {
-    display: inline-block;
-    width: 32%;
-    margin-right: 2%;
-    vertical-align: bottom;
+.tools-items {
+    display: flex;
+    justify-content: space-between;
 }
-.tools-item:last-child {
-    margin-right: 0;
+.tools-item {
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    vertical-align: bottom;
 }
 .tools-icon-box {
     position: relative;
-    display: inline-block;
     width: 18.9%;
     height: 70px;
     margin-top: 5px;
-    margin-right: 8.1%;
     border-radius: 10px;
     border-top-right-radius: 0;
     background-color: #373435;  
@@ -207,7 +213,9 @@ body, html {
     line-height: 70px;
 }
 .tools-content-box {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 72%;
 }
 .tools .text {
@@ -216,7 +224,7 @@ body, html {
 .tools-item .caption {
     display: inline-block;
     width: 75%;
-    margin: 0 0 20px 0;
+    margin: 0 0 0px 0;
     font-size: 1.6rem;
     text-align: left;
 }
@@ -224,7 +232,7 @@ body, html {
     position: relative;
     height: 50px;
     font-size: 1.4rem;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     text-overflow: ellipsis;
     overflow: hidden;
     text-align: justify; 
