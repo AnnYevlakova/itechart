@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <title></title>
     <link rel=stylesheet href="css/bootstrap.css"/>
-    <link rel=stylesheet href="css/font-awesome.css"/>
     <link rel=stylesheet href="css/style.css"/>
 </head>
     
 <body>
     <div class="box container-fluid">
         <div class="main container">
-            <aside class="logo center-block">
+            <aside class="logo col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4">
                 <p class='site-name'>sitename</p>
             </aside>        
-            <nav class="menu center-block">
-                <ul class="menu-container">
+            <nav class="menu row">
+                <ul class="menu-container col-xs-12">
                     <li class="menu-item"><a class="active" href="">home</a></li>
                     <li class="menu-item"><a href="">about</a></li>
                     <li class="menu-item"><a href="">serices</a></li>
@@ -24,57 +23,51 @@
                     <li class="menu-item"><a href="">contact</a></li>
                 </ul>
             </nav>
-            <section class="banner col-xs-12">
+            <section class="banner row">
                 <img class="banner-img" alt="" src="image/banner.jpg">
             </section>
-            <section class="main-news">
+            <section class="main-news row">
                 <h1 class="caption">lorem ipsum</h1>
                 <h2 class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
                     Mauris quis turpis eros. Suspendisse eu elit vel euismod. Vestibulum id lectus sapien.
                 </h2>
                 <div class="read-more row">
-                    <div class="decor-elem col-xs-5"></div>
-                    <button type="button" class="btn btn-danger read-more-btn col-xs-2">read more</button>
-                    <div class="decor-elem col-xs-5"></div>
+                    <div class="decor-elem col-xs-4 col-sm-5"></div>
+                    <button type="button" class="btn btn-danger read-more-btn col-xs-4 col-sm-2">read more</button>
+                    <div class="decor-elem col-xs-4 col-sm-5"></div>
                 </div>
             </section>
-            <section class="tools">
+            <section class="tools row">
                 <h1 class="caption">vivamus vest</h1>
                 <h2 class="text">
                     Ut lobortis, libero eget efficitur semper, arcu sem posuere purus, non rhoncus diam quam a sem.<br>
                     Praesent egestas eu tortor nec efficitur.
                 </h2>
                 <div class="tools-items row">
-                    <div class="tools-item">
-                        <div class="tools-icon-box col-ms-1">
-                            <span class="glyphicon glyphicon-pencil tools-icon center-block" aria-hidden="true"></span> 
-                        </div>
-                        <div class="tools-content-box col-ms-3">
-                            <h3 class="caption">Vivamus a egestas risuseget efficitur</h3>
-                            <p class="text">Ut lobortis, libero eget efficitur semper, arcu sem posuere purus, non rhoncus diam quam a sem. Fusce quis vehicula quam, nec tincidunt lectus</p>
-                            <a href="" class="more-info">more info  <span class="glyphicon glyphicon-menu-right arrow" aria-hidden="true"></span></a>
-                        </div>
+                    <div class="tools-icon-box col-sm-1 col-xs-2">
+                        <span class="glyphicon glyphicon-pencil tools-icon center-block" aria-hidden="true"></span> 
                     </div>
-                    <div class="tools-item ">
-                        <div class="tools-icon-box col-ms-1">
-                            <span class="glyphicon glyphicon-user tools-icon center-block" aria-hidden="true"></span> 
-                        </div>
-                        <div class="tools-content-box col-ms-3">
-                            <h3 class="caption">In hac habitasse platea dictumst</h3>
-                            <p class="text">Vivamus mattis quam imperdiet est blandit convallis. Nunc ac sem semper, iaculis nibh non, consequat orci. Fusce quis vehicula quam, nec tincidunt lectus.</p>
-                            <a href="" class="more-info">more info <span class="glyphicon glyphicon-menu-right arrow" aria-hidden="true"></span></a>
-                        </div>
+                    <div class="tools-content-box col-sm-3 col-xs-10">
+                        <h3 class="caption">Vivamus a egestas risuseget</h3>
+                        <p class="text">Ut lobortis, libero eget efficitur semper, arcu sem posuere purus, non rhoncus diam quam a sem. Fusce quis vehicula quam, nec tincidunt lectus</p>
+                        <a href="" class="more-info">more info  <span class="glyphicon glyphicon-menu-right arrow" aria-hidden="true"></span></a>
                     </div>
-                    <div class="tools-item">
-                        <div class="tools-icon-box col-ms-1">
-                            <span class="glyphicon glyphicon-wrench tools-icon center-block" aria-hidden="true"></span>
-                        </div>
-                        <div class="tools-content-box col-ms-3">
-                            <h3 class="caption">Vivamus bibendum nulla sit amet</h3>
-                            <p class="text">Et ornare purus vestibulum. Curabitur molestie cursus nunc et euismod. Praesent venenatis sem mauris. Phasellus venenatis magna porttitor elit scelerisque eleifend.</p>
-                            <a href="" class="more-info">more info <span class="glyphicon glyphicon-menu-right arrow" aria-hidden="true"></span></a>
-                        </div>
+                    <div class="tools-icon-box col-sm-1 col-xs-2">
+                        <span class="glyphicon glyphicon-user tools-icon center-block" aria-hidden="true"></span> 
+                    </div>
+                    <div class="tools-content-box col-sm-3 col-xs-10">
+                        <h3 class="caption">In hac habitasse platea dictumst</h3>
+                        <p class="text">Vivamus mattis quam imperdiet est blandit convallis. Nunc ac sem semper, iaculis nibh non, consequat orci. Fusce quis vehicula quam, nec tincidunt lectus.</p>
+                        <a href="" class="more-info">more info <span class="glyphicon glyphicon-menu-right arrow" aria-hidden="true"></span></a>
+                    </div>
+                    <div class="tools-icon-box col-sm-1 col-xs-2">
+                        <span class="glyphicon glyphicon-wrench tools-icon center-block" aria-hidden="true"></span>
+                    </div>
+                    <div class="tools-content-box col-sm-3 col-xs-10">
+                        <h3 class="caption">Vivamus bibendum nulla sit amet</h3>
+                        <p class="text">Et ornare purus vestibulum. Curabitur molestie cursus nunc et euismod. Praesent venenatis sem mauris. Phasellus venenatis magna porttitor elit scelerisque eleifend.</p>
+                        <a href="" class="more-info">more info <span class="glyphicon glyphicon-menu-right arrow" aria-hidden="true"></span></a>
                     </div>
                 </div>
             </section>
@@ -87,7 +80,7 @@
                     <div class="news-item  col-sm-offset-1 col-sm-3">
                         <h3 class="caption">Vivamus egestas risuseget efficitur</h3>
                         <img class="news-img" alt="" src="image/news-img-1.jpg">             
-                        <p class="text">Ut lobortis, libero eget efficitur semper, arcu sem posuere purus, non rhoncus diam quam a sem.Ut lobortis, a sem. Curabitur vitae. Diam quam a sem. Curabitur vitae.</p>
+                        <p class="text">Ut lobortis, libero eget efficitur semper, arcu sem posuere purus, non rhoncus diam quam a sem.Ut lobortis, a sem. Curabitur vitae. Diam quam a sem. Curabitur vitae. Phasellus venenatis magna porttitor elit scelerisque eleifend</p>
                         <a href="" class="more-info">more info <span class="glyphicon glyphicon-menu-right arrow" aria-hidden="true"></span></a>
                     </div>
                     <div class="news-item col-sm-3">
@@ -104,14 +97,14 @@
                     </div>
                 </div>
             </section>
-            <section class="products">
+            <section class="products row">
                 <h1 class="caption">Morbi eget finibus ligula</h1>
                 <h2 class="text">
                     Duis id vestibulum ipsum, eget laoreet nunc.<br/> 
                     Donec pretium tellus id commodo efficitur. Vivamus enisl maximus, pharetra eros non, suscipit sem. <br/>
-                    Etiam  semper nunc. Morbi suscipit elit a leo accumsan viverra. Nam vehicula vehicula pulvinar.
+                    Etiam  semper nunc.
                 </h2>
-                <a href="" class="products-link">our products</a>
+                <a href="" class="products-link row">our products</a>
                 <div class="products-tabs col-sm-6 col-sm-offset-3">
                     <input class="products-tab" type="button" value="integer vit">
                     <input class="products-tab" type="button" value="donce ametuno">
@@ -122,9 +115,9 @@
                     <input class="products-tab" type="button" value="fermnutin">
                 </div>
                 <div class="read-more row">
-                    <div class="decor-elem col-xs-5"></div>
-                    <button type="button" class="btn btn-danger read-more-btn col-xs-2">view more</button>
-                    <div class="decor-elem col-xs-5"></div>
+                    <div class="decor-elem col-xs-4 col-sm-5"></div>
+                    <button type="button" class="btn btn-danger read-more-btn col-xs-4 col-sm-2">view more</button>
+                    <div class="decor-elem col-xs-4 col-sm-5"></div>
                 </div>
             </section>
         </div>

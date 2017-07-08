@@ -16,11 +16,7 @@
     font-weight: bolder;
     font-style: normal;
 }
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: "Source Sans Pro";
-}
+
 .box {
     position: relative;
     min-height: 100%;
@@ -34,18 +30,20 @@ body, html {
     max-width: 1230px;
     padding-bottom: 76px;   
     border-radius: 5px;
-    background-color: #ebebeb;   
+    --main-bg-c: #ebebeb;
+    background-color: var(--main-bg-c);   
 }
-
+:root {
+    --main-size: 60px;
+    --main-fs: 1.6rem;
+}
 /******** logo ********/
-
 .logo {
     position: relative;
     top: -50px;
-    width: 260px;
     border-radius: 5px;
     box-shadow: -9px 10px 0px 0px rgba(0, 0, 0, 0.1);
-    background-color: #ebebeb;     
+    background-color: var(--main-bg-c);     
 }
 .site-name {
     margin: 0;
@@ -66,11 +64,9 @@ body, html {
 
 /******** menu ********/
 .menu {
-    width: 100%;
     margin: 0px 0 40px 0;
 }
 .menu-container {
-    width: 100%;
     padding: 0;
     margin:  0px auto;
     text-align: center;
@@ -110,7 +106,6 @@ body, html {
 
 /**************  main-news ***********/
 .main-news {
-    width: 100%;
     margin: 0 0 50px 0;
 }
 .caption {
@@ -129,12 +124,10 @@ body, html {
 }
 .read-more {
     position: relative;
-    margin-top: 60px;
+    margin-top: var(--main-size);
     padding-left: 4px;
 }
 .decor-elem {
-    /*display: inline-block;
-    width: 43.5%;*/
     height: 17px;
     background-image: url("../image/decor-elem.png");
     background-repeat: repeat-x;
@@ -142,17 +135,9 @@ body, html {
 .read-more-btn {
     position: relative;
     bottom: 10px;
-    /*display: inline-block;
-    width: 120px;*/
-    height: 38px;
-   /* margin: 0 14px;*/
-    /*border: 0;*/
-    /*background-color: #ed3237;*/
-    /*border-radius: 5px;*/
-    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.12);
-    /*color:  #ebebeb;*/
-    /*font-family: "Source Sans Bold"; */   
-    font-size: 1.6rem;    
+    height: 40px;
+    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.12);  
+    font-size: var(--main-fs);    
     text-transform: uppercase;
     cursor: pointer;
     letter-spacing: 1px;
@@ -160,27 +145,14 @@ body, html {
 
 /**************  tools ***********/
 .tools {
-    width: 100%;
     font-size: 0;
-    padding-bottom: 60px;
+    padding-bottom: var(--main-size);
     border-bottom: 1px solid #c2c2c2;
-}
-.tools-item {
-    display: inline-block;
-    width: 32%;
-    margin-right: 2%;
-    vertical-align: bottom;
-}
-.tools-item:last-child {
-    margin-right: 0;
 }
 .tools-icon-box {
     position: relative;
-    display: inline-block;
-    width: 18.9%;
     height: 70px;
     margin-top: 5px;
-    margin-right: 8.1%;
     border-radius: 10px;
     border-top-right-radius: 0;
     background-color: #373435;  
@@ -188,26 +160,24 @@ body, html {
     vertical-align: top;    
 }
 .tools-icon {
-    color: #ebebeb;
+    color: var(--main-bg-c);
     font-size: 4.0rem; 
     text-align: center;
     line-height: 70px;
 }
 .tools-content-box {
-    display: inline-block;
-    width: 72%;
 }
 .tools .text {
-    margin-bottom: 60px;    
+    margin-bottom: var(--main-size);    
 }
-.tools-item .caption {
+.tools-items .caption {
     display: inline-block;
     width: 75%;
     margin: 0 0 20px 0;
-    font-size: 1.6rem;
+    font-size: var(--main-fs);
     text-align: left;
 }
-.tools-item  .text {
+.tools-items  .text {
     position: relative;
     height: 50px;
     font-size: 1.4rem;
@@ -216,7 +186,7 @@ body, html {
     overflow: hidden;
     text-align: justify; 
 }
-.tools-item  .text:before {
+.tools-items  .text:before {
     content: '...';
     line-height: 10px;
     position: absolute;
@@ -224,7 +194,7 @@ body, html {
     bottom: 0;
     background-color: #ececec;
 }
-.tools-item  .text:after {
+.tools-items  .text:after {
     content: '';
     position: absolute;
     right: 0;
@@ -236,7 +206,7 @@ body, html {
 .more-info {
     color:  #373435;
     font-family: "Source Sans Bold";
-    font-size: 1.6rem;
+    font-size: var(--main-fs);
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -245,14 +215,14 @@ body, html {
 .news {
     width: 100%;
     font-size: 0;
-    padding-bottom: 70px;
+    padding-bottom: var(--main-size);
     border-bottom: 1px solid #c2c2c2;
 }
 .news .caption {
     margin: 50px 0 10px;
 }
 .news .text {
-    margin-bottom: 50px;
+    margin-bottom: var(--main-size);
 }
 .news-item {
     position: relative;
@@ -265,13 +235,13 @@ body, html {
     box-shadow: -9px 10px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .news-item:first-child {
-    margin-left: 110px;
+    margin-left: 9.4%;
 }
 .news-item .caption {
     margin: 0 20px 0 30px;
     font-family: 'Source Sans Bold';
     color:  #373435;
-    font-size: 1.6rem;
+    font-size: var(--main-fs);
     text-align: left;
 }
 .news-img {
@@ -322,7 +292,7 @@ body, html {
     margin: 25px auto 35px auto;
     color:  #ed3237;
     font-family: 'Source Sans Bold';    
-    font-size: 1.6rem;    
+    font-size: var(--main-fs);    
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -330,7 +300,6 @@ body, html {
     letter-spacing: 1px;
 }
 .products-tabs {
-    /*width: 37%;*/
     margin-bottom: 35px;
     text-align: center;
 }
@@ -346,7 +315,7 @@ body, html {
     color:  #373435;    
     background-color: transparent;    
     font-family: 'Source Sans Bold';
-    font-size: 1.6rem;
+    font-size: var(--main-fs);
     line-height: 35px;
     text-align: center;
     text-transform: uppercase;
@@ -367,60 +336,25 @@ body, html {
     margin: 0;
     color:  #ebebeb;
     font-family: 'Source Sans Pro';
-    font-size: 1.6rem;
+    font-size: var(--main-fs);
     line-height: 26px;
     text-align: center;
     vertical-align: middle;
 }
 
 /************ media queries ***********/
-@media (min-width: 1230px) and (max-width: 1380px) {
- /*.decor-elem {
-  width: 42%;    
- }
-}
-@media (max-width: 1230px) {
- .decor-elem {
-  width: 40%;
- }
- .read-more-btn {
-  width: 16%;
-  margin-top: 20px;
- }
-}
-
 @media (max-width: 1024px){
+ :root {
+  --main-size: 20px; 
+  --mani-fs: 1.4rem;
+ }
  .arrow {
   height: 8px;
- }
- .decor-elem {
-  width: 34.5%;
- }
- .read-more {
-  margin-top: 20px;
- }
- .read-more-btn {
-  width: 26%;
- }
- .tools,
- .news {
-  padding-bottom: 20px;
- }
- .tools .text,
- .news .text{
-  margin-bottom: 20px;
- }
- .tools-item .caption,
- .news-item .caption{
-  font-size: 1.4rem;
  }
  .tools-icon {
   font-size: 2.2rem;
  }
  .news-item {
-  left: 0;
-  width: 31%;
-  margin-right: 3%;
   padding: 10px 0;
  }
  .news-img {
@@ -433,52 +367,48 @@ body, html {
   margin: 10px auto;
  }
  .products-tabs {
-  width: 80%;
   margin-bottom: 20px;
- }*/
+ }
 }
-
 @media (max-width: 768px) {
+ :root {
+  --main-size: 10px; 
+  --main-fs: 1.4rem;
+ }    
  .box {
   padding-top: 30px;
  }
- .main {/*
-  width: 95%;*/
+ .main {
   padding: 10px;
  }
  .arrow {
   height: 8px;
  }
  .logo { 
-  top: -20px;
-  width: 130px;
-  margin-left: -65px; 
-  font-size: 1.4rem; 
+  top: -25px;
+  font-size: var(--main-fs); 
  }
  .site-name {
   font-size: 2.0rem;
   line-height: 40px;
  }
- /*.menu {
-  margin: 25px 0 10px;
+ .menu {
+  margin: 25px -15px 10px -15px;
  }
  .menu-container {
-  width: 100%;
   text-align: center;
  }
  .menu-item{
   margin-right: 5px;
-  font-size: 1.4rem;
+  font-size: var(--main-fs);
   padding: 5px 0;
  }
- .banner {
+ .banner,
+ .main-news {
   margin-bottom: 20px;
  }
  .banner-img {        
   box-shadow: -2px 4px 1px 0px rgba(0, 0, 0, 0.1);        
- }
- .main-news {
-  margin-bottom: 20px;
  }
  .caption {
   margin: 2px 0; 
@@ -494,32 +424,14 @@ body, html {
  .text {
   font-size: 1.2rem;
  }
- .read-more {
-  margin-top: 10px;       
- }
- .decor-elem {
-  width: 30%;
- }
  .read-more-btn {
-  width: 36%;
+  bottom: 5px;
   height: 25px;
-  margin: 0 1%;
   padding: 0 1%;
   box-shadow: -2px 2px 0px 0px rgba(0, 0, 0, 0.12);
   font-size: 1.2rem;
  }
- .tools {
-  padding-bottom: 10px;
- }*/
- /*.tools .text {        
-  margin-bottom: 10px;
- }
- .tools-item {
-  width: 100%;
-  margin-bottom: 10px;
- }
  .tools-icon-box {
-  width: 30px;
   height: 30px;
   border-radius: 5px;
   border-top-right-radius: 0;
@@ -529,38 +441,29 @@ body, html {
     font-size: 2.0rem; 
     line-height: 30px;
  }
- .tools-item .caption {
+ .tools-items .caption {
   margin-bottom: 5px;
-  font-size: 1.4rem;
  }
- .tools-item .text {
+ .tools-items .text {
   margin-bottom: 5px;
   font-size: 1.2rem;
   height: 45px;
  }
- .more-info {
-  font-size: 1.2rem;
- }
- .news {
-  padding-bottom: 10px;
- }
- .news .caption {
+ .news .caption,
+ .products{
   margin-top: 20px;
  }
- .news .text {
-  margin-bottom: 10px;
- }
  .news-item {
-  width: 80%;
-  left: 10%;
   padding: 5px 0;
   margin: 0 0 15px 0;
  }
+ .news-item:first-child {
+  margin-left: 0;
+ }
  .news-item .caption {
-  font-size: 1.4rem;
   margin-top: 5px;
-}*/
- /*.news-img {
+}
+ .news-img {
   margin: 5px 0;
  }
  .news-item .text {
@@ -569,18 +472,14 @@ body, html {
   font-size: 1.2rem;
   line-height: 17px;
  }
- .products {
-   margin-top: 20px;
- }
  .products-link {
-  margin: 5px auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
  }
  .products-tabs {
-  width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: var(--main-size);
  }
  .products-tab {
-  font-size: 1.2rem;
   line-height: inherit;
  }
  .footer {
@@ -591,24 +490,20 @@ body, html {
   font-size: 1rem;
   line-height: inherit;
  }
-}*/
-
-/*
+}
 @media (min-width: 560px) and (max-width: 768px){
- .tools-item .text {
+ .tools-items .text {
   height: 30px;
  }
 }
-
 @media (min-width: 450px) and (max-width: 630px){
  .news-item .text {
-  height: 49px;
+  height: 48px;
  }
  .menu-item {
   font-size: 1.6rem;
  }
 }
-
 @media (min-width: 630px) and (max-width: 768px){
  .news-item .text {
   height: 30px;
@@ -617,4 +512,3 @@ body, html {
   font-size: 1.8rem;
  }
 }
-*/
