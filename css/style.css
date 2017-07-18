@@ -37,6 +37,7 @@
     --main-size: 60px;
     --main-fs: 1.6rem;
 }
+
 /******** logo ********/
 .logo {
     position: relative;
@@ -370,6 +371,7 @@
   margin-bottom: 20px;
  }
 }
+
 @media (max-width: 768px) {
  :root {
   --main-size: 10px; 
@@ -491,11 +493,13 @@
   line-height: inherit;
  }
 }
+
 @media (min-width: 560px) and (max-width: 768px){
  .tools-items .text {
   height: 30px;
  }
 }
+
 @media (min-width: 450px) and (max-width: 630px){
  .news-item .text {
   height: 48px;
@@ -504,6 +508,7 @@
   font-size: 1.6rem;
  }
 }
+
 @media (min-width: 630px) and (max-width: 768px){
  .news-item .text {
   height: 30px;
